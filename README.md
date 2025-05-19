@@ -4,19 +4,35 @@
 
 - What is \_\_main\_\_.py used for?
 
+`__main__.py acts as the entry point for the package. When the package is executed directly (using python -m package), the code in __main__.py will run.`
+
 - How to prevent python module code from executing when the module is imported?
+
+`You have to wrap it in if __name__=="__main__": block, then the only way it will execute is throught direct execution.`
 
 - What's the name of method that represents a class constructor in Python?
 
+`That method is called __init__, it is being called automatically when you create an instance of a class.`
+
 - What options do you have when you need to insert value of a variable into string? Name at least three.
+
+`Most common way is through f-strings, but you also have .format() and formatting using %.`
 
 - How can you truly restrict access to a private method of a class in Python?
 
+`I dont think it is possible to TRULY restrict access to a private method of a class in Python, as far as I know the double underscore prefix (__) is more of a convention.`
+
 - What Python feature would you use to add some functionalities to an existing function without interfering into its code?
+
+`I would use decorators for wrapping a function.`
 
 - How is @staticmethod different from @classmethod?
 
+`@classmethod receives cls as the first argument instead of self, while the @staticmethod works just like a regular function that is located inside a class (not receiving cls nor self).`
+
 - What is the advantage of using **with** keyword when reading/writing a file in Python?
+
+`Using WITH is a preferred option when dealing with reading/writing a file in Python - it is safer, cleaner and you dont have to close the file manually.`
 
 ## Problem solving
 
